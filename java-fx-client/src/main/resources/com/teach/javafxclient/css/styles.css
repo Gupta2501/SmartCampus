@@ -1,0 +1,518 @@
+
+@import '../fonts/Fonts.css';
+@import 'MFXColors.css';
+
+.root {
+}
+
+
+@font-face {
+    -fx-font-family : 'Source Han Sans CN Regular';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Regular.otf');
+}
+
+@font-face {
+    -fx-font-family : 'Source Han Sans CN Medium';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Source Han Sans CN Bold';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Han Sans CN ExtraBold';
+    font-weight: 800px;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Heavy.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Han Sans CN Light';
+    font-weight: 300px;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Han Sans CN Regular';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('truetype');
+}
+
+/**************************************************
+ * Text Fields
+**************************************************/
+.mfx-text-field {
+	-fx-min-width: 130;
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+.mfx-text-field .floating-text {
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+
+#customField {
+	-fx-border-color: -common-gradient;
+}
+
+#customField .floating-text {
+	-fx-text-fill: -mfx-red;
+}
+
+/**************************************************
+ * Password Fields
+**************************************************/
+#customPassword {
+	-fx-border-color: -secondary-gradient;
+}
+
+#customPassword:masked {
+	-fx-text-fill: -mfx-blue;
+}
+
+#customPassword .mfx-font-icon {
+	-mfx-color: -mfx-blue;
+}
+
+#customPassword .mfx-context-menu .mfx-menu-item:disabled .mfx-font-icon {
+	-mfx-color: #bcbcbc;
+}
+
+#customPassword .floating-text {
+	-fx-text-fill: -mfx-blue;
+}
+
+#validatedField {
+	-mfx-hide-character: '?';
+}
+
+#validatedField:invalid {
+	-fx-border-color: -mfx-red;
+}
+
+#validatedField:invalid .floating-text {
+	-fx-text-fill: -mfx-red;
+}
+
+#validatedField:invalid .mfx-font-icon {
+	-mfx-color: -mfx-red;
+}
+
+#validationLabel {
+	-fx-font-family: 'Source Han Sans CN Regular';
+	-fx-font-size: 11;
+}
+
+/**************************************************
+ * Button
+**************************************************/
+button {
+}
+
+.mfx-button {
+	-fx-text-fill: -mfx-text-he;
+	-fx-font-size: 15px;
+}
+
+.mfx-button .mfx-ripple-generator {
+	-mfx-ripple-radius: 40;
+	-mfx-auto-clip: true;
+}
+
+.mfx-button .text {
+	-fx-font-smoothing-type: gray;
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+#custom {
+	-fx-background-color: -mfx-purple;
+	-fx-text-fill: white
+}
+
+#unselected-custom {
+	-fx-background-color: white;
+	-fx-text-fill: #9FA4B6
+}
+
+#schedule-custom1 {
+    -fx-background-color: #FBC2C2;
+    -fx-text-fill: black;
+}
+
+#schedule-custom2 {
+    -fx-background-color: #CDDDFC;
+    -fx-text-fill: black;
+}
+
+#schedule-custom3 {
+    -fx-background-color: #BEEDF2;
+    -fx-text-fill: black;
+}
+
+#schedule-custom4 {
+    -fx-background-color: #FCD9B5;
+    -fx-text-fill: black;
+}
+
+#schedule-custom5 {
+    -fx-background-color: #C8C6F6;
+    -fx-text-fill: black;
+}
+
+#schedule-custom6 {
+    -fx-background-color: #F7B3FF;
+    -fx-text-fill: black;
+}
+
+.outline-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -mfx-purple;
+	-fx-border-radius: 3;
+
+	-fx-text-fill: -mfx-purple;
+}
+
+.outline-button:hover,
+.outline-button:focused {
+	-fx-background-color: -mfx-purple;
+	-fx-text-fill: white;
+}
+
+
+.link-button {
+	-fx-background-color: transparent;
+	-fx-border-radius: 3;
+	-fx-text-fill: #0096FF;
+	-fx-underline: true;
+	-fx-cursor: hand;
+}
+
+.link-button:armed,
+.link-button:focused {
+	-fx-border-color: #006BFF;
+	-fx-text-fill: #006BFF;
+}
+
+.link-button .mfx-ripple-generator {
+	-mfx-ripple-color: #D9E9FF;
+}
+
+.label {
+  -fx-font-family: "Source Han Sans CN Bold";
+
+}
+
+
+/**************************************************
+ * Legacy Combos
+**************************************************/
+.mfx-legacy-combo-box {
+	-fx-min-width: 120;
+}
+
+/**************************************************
+ * New Combos
+**************************************************/
+.mfx-combo-box {
+	-fx-min-width: 150;
+}
+
+#customNCombo {
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+	-fx-background-color: -mfx-purple;
+	-fx-background-radius: 30;
+	-fx-text-fill: white;
+
+	-fx-padding: 3 3 3 6;
+	-fx-background-insets: 0 0 0 -3;
+}
+
+#customNCombo .floating-text .text{
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+#customNCombo .caret .mfx-font-icon {
+	-mfx-color: white;
+}
+
+#customNCombo .caret .mfx-ripple-generator {
+	-mfx-ripple-color: rgba(255, 255, 255, 0.5);
+}
+
+#customNCombo2 {
+	-fx-border-color: transparent transparent gray transparent;
+	-fx-border-radius: 0;
+	-fx-padding: 3 -3 0 3;
+}
+
+#customNCombo2:focus-within {
+	-fx-border-color: transparent transparent -common-gradient transparent;
+}
+
+#customNCombo2:focus-within .caret .mfx-font-icon {
+	-mfx-color: #ff5d53;
+}
+
+#customNCombo2 .virtual-flow {
+	-track-color: derive(#ff5d53, 90%);
+	-thumb-color: derive(#ff5d53, 50%);
+	-thumb-hover-color: derive(#ff5d53, 25%);
+}
+
+#customNCombo2 .virtual-flow .mfx-combo-box-cell:hover {
+	-fx-background-color: derive(#ff5d53, 90%);
+}
+
+/**************************************************
+ * Filter Combos
+**************************************************/
+#customFilter {
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+	-fx-background-color: #007BF6;
+	-fx-text-fill: white;
+
+	-fx-padding: 4;
+	-fx-background-insets: 0;
+}
+
+#customFilter .text-field .text{
+	-fx-prompt-text-fill: white;
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+#customFilter .combo-popup .text-field .text{
+	-fx-prompt-text-fill: -mfx-text-me;
+	-fx-font-family: 'Source Han Sans CN Regular';
+}
+
+#customFilter .caret .mfx-font-icon {
+    -mfx-color: #FF794B;
+    -mfx-description: "fas-angle-down";
+    -mfx-size: 16;
+}
+
+#customFilter .caret .mfx-ripple-generator {
+	-mfx-ripple-color: rgba(255, 255, 255, 0.5);
+}
+
+/**************************************************
+ * Date Pickers
+**************************************************/
+#custDatePicker {
+	-fx-background-color: #007BF6;
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+
+	-fx-font-family: "Source Han Sans CN Medium";
+	-fx-text-fill: white;
+}
+
+#custDatePicker .floating-text {
+	-fx-background-color: transparent;
+
+	-fx-font-family: "Source Han Sans CN Medium";
+	-fx-text-fill: white;
+}
+
+#custDatePicker .icon {
+	-mfx-color: white;
+}
+
+#custDatePicker .date-picker-popup .content {
+	-fx-background-color: #007BF6;
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+}
+
+#custDatePicker .date-picker-popup .left-arrow:disabled,
+#custDatePicker .date-picker-popup .right-arrow:disabled {
+	-fx-opacity: 0.8;
+}
+
+#custDatePicker .date-picker-popup .left-arrow .mfx-font-icon,
+#custDatePicker .date-picker-popup .right-arrow .mfx-font-icon {
+	-mfx-color: white;
+}
+
+#custDatePicker .date-picker-popup .months-combo,
+#custDatePicker .date-picker-popup .years-combo {
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+	-fx-background-color: white;
+	-fx-text-fill: -mfx-text-he;
+
+	-fx-padding: 4;
+	-fx-background-insets: 0;
+	-fx-font-family: "Source Han Sans CN Medium";
+}
+
+#custDatePicker .date-picker-popup .months-combo:focus-within,
+#custDatePicker .date-picker-popup .years-combo:focus-within {
+	-fx-text-fill: #007BF6;
+}
+
+#custDatePicker .date-picker-popup .months-combo:focus-within .caret .mfx-font-icon,
+#custDatePicker .date-picker-popup .years-combo:focus-within .caret .mfx-font-icon {
+	-mfx-color: #007BF6;
+}
+
+#custDatePicker .date-picker-popup .months-combo .virtual-flow,
+#custDatePicker .date-picker-popup .years-combo .virtual-flow {
+	-track-color: derive(#007BF6, 100%);
+	-thumb-color: derive(#007BF6, 70%);
+	-thumb-hover-color: derive(#007BF6, 45%);
+}
+
+#custDatePicker .date-picker-popup .months-combo .virtual-flow .mfx-combo-box-cell,
+#custDatePicker .date-picker-popup .years-combo .virtual-flow .mfx-combo-box-cell {
+	-fx-font-family: 'Source Han Sans CN Medium';
+}
+
+#custDatePicker .date-picker-popup .months-combo .virtual-flow .mfx-combo-box-cell:selected .label,
+#custDatePicker .date-picker-popup .years-combo .virtual-flow .mfx-combo-box-cell:selected .label {
+	-fx-text-fill: #007BF6;
+}
+
+#custDatePicker .date-picker-popup .months-combo .virtual-flow .mfx-combo-box-cell:hover,
+#custDatePicker .date-picker-popup .years-combo .virtual-flow .mfx-combo-box-cell:hover,
+#custDatePicker .date-picker-popup .months-combo .virtual-flow .mfx-combo-box-cell:selected,
+#custDatePicker .date-picker-popup .years-combo .virtual-flow .mfx-combo-box-cell:selected {
+	-fx-background-color: derive(#007BF6, 130%);
+}
+
+#custDatePicker .date-picker-popup .week-day {
+	-fx-font-family: 'Source Han Sans CN Bold';
+	-fx-text-fill: white;
+}
+
+#custDatePicker .date-picker-popup .mfx-date-cell {
+	-fx-font-family: 'Source Han Sans CN Medium';
+	-fx-text-fill: white;
+}
+
+#custDatePicker .date-picker-popup .mfx-date-cell:extra {
+	-fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+#custDatePicker .date-picker-popup .mfx-date-cell:current {
+	-fx-background-color: transparent;
+	-fx-border-color: white;
+	-fx-border-width: 2;
+	-fx-font-family: 'Source Han Sans CN Medium';
+}
+
+#custDatePicker .date-picker-popup .mfx-date-cell:selected {
+	-fx-background-color: white;
+	-fx-font-family: 'Source Han Sans CN Bold';
+	-fx-text-fill: #007BF6;
+}
+
+
+/**************************************************
+ * Font Resources
+**************************************************/
+
+.mfx-table-view .virtual-flow .mfx-table-row:hover,
+.mfx-table-view .virtual-flow .mfx-table-row:selected {
+	-fx-background-color: transparent;
+}
+
+.mfx-table-view .virtual-flow .mfx-table-row .mfx-ripple-generator {
+	-mfx-paused: true;
+}
+
+
+/**************************************************
+ * Progress Bars
+**************************************************/
+#customBar1 .bar1 {
+	-fx-fill: -common-gradient;
+}
+
+#customBar1 .bar2 {
+	-fx-fill: -secondary-gradient;
+}
+
+#customBar2 .track {
+	-fx-fill: -mfx-purple;
+	-fx-stroke: -mfx-purple;
+	-fx-stroke-width: 2;
+}
+
+#customBar2 .bar1,
+#customBar2 .bar2 {
+	-fx-stroke: -mfx-purple;
+	-fx-stroke-width: 1;
+	-fx-fill: white;
+}
+
+#determinateBar:range1 .bar1 {
+	-fx-fill: -mfx-red;
+}
+
+#determinateBar:range1 .track {
+	-fx-fill: derive(-mfx-red, 85%)
+}
+
+#determinateBar:range2 .bar1 {
+	-fx-fill: -mfx-blue;
+}
+
+#determinateBar:range2 .track {
+	-fx-fill: derive(-mfx-blue, 85%)
+}
+
+#determinateBar:range3 .bar1 {
+	-fx-fill: -mfx-green;
+}
+
+#determinateBar:range3 .track {
+	-fx-fill: derive(-mfx-green, 85%);
+}
+
+
+/**************************************************
+ * Progress Spinners
+**************************************************/
+#customSpinner1 {
+	-mfx-color1: #7A0ED9;
+	-mfx-color2: #EB00A6;
+	-mfx-color3: #FF1471;
+	-mfx-color4: #FF7C4A;
+}
+
+#customSpinner1 .track {
+	-fx-stroke: #ebebeb;
+}
+
+#determinateSpinner .text {
+	-fx-font-family: 'Open Sans SemiBold';
+	-fx-font-size: 18;
+	-fx-fill: black;
+}
+
+#determinateSpinner:range1 .arc {
+	-fx-fill: #FF6088;
+}
+
+#determinateSpinner:range2 .arc {
+	-fx-fill: #00BCFF;
+}
+
+#determinateSpinner:range3 .arc {
+	-fx-fill: #1EC400;
+}
